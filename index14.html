@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .김씨집안 {
+            height: 100vh;
+            padding-top: 50px;
+            background-color: aqua;
+        }
+
+        .김장손 {
+
+            width: 600px;
+            padding: 20px;
+            margin: 0 auto 0;
+            background-color: beige;
+        }
+
+        .김첫째 {
+            position: relative;
+            background-color: blue;
+        }
+
+        .김첫째 .김일자 {
+            position: relative;
+            z-index: 20;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+        }
+
+        .김첫째 .김이자 {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 0;
+            top: 100px;
+            z-index: 10;
+            background-color: yellow;
+        }
+
+        .김첫째 .김삼자 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="김씨집안">
+        <div class="김장손">
+            <div class="김첫째">
+                <div class="김일자">김일자</div>
+                <div class="김이자">김이자</div>
+                <div class="김삼자">김삼자</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

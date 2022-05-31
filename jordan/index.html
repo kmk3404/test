@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="text">0</div>
+    <section>
+        <div class="jordan">
+            <p>jordan<p class="chicago">chicago</p></p>
+        </div>
+    </section>
+    <section>
+        <div class="slide bg1"
+        data-0="top:100%"
+        data-500="top:0%"
+        ></div>
+    </section>
+    <section>
+        <div class="slide bg2"
+        data-500="left:-100%"
+        data-1000="left:0%"
+        ></div>
+    </section>
+    <section>
+        <div class="slide bg3"
+        data-1000="top:-100%"
+        data-1500="top:0%"
+        ></div>
+    </section>
+    <section>
+        <div class="slide ball"
+        data-800="left:100%"
+        data-2000="left:-100%"
+        >
+            <img src="img/ball.png" alt="농구공">
+        </div>
+    </section>
+    <section>
+        <div class="slide bg4"
+        data-1500="opacity:0"
+        data-2000="opacity:1"
+        >
+        </div>
+    </section>
+    <section>
+        <div class="slide jd"
+        data-2000="left:-100%; transform:rotate(0deg)"
+        data-3000="left:27%; opacity:1; transform:rotate(720deg)"
+        data-3200="top:7%"
+        data-3800="opacity:0;"
+        >
+            <img src="img/jordan_01.jpg.png" alt="조던">
+        </div>
+    </section>
+    <section>
+        <div class="slide jd2"
+        data-3000="left:20%; opacity:0"
+        data-3500="left:27%"
+        data-4000="top:4%; opacity:1"
+        >
+            <img src="img/jordan shadow 01.png" alt="조던그림자">
+        </div>
+    </section>
+    <section>
+        <div class="slide white"
+        data-4000="opacity:0"
+        data-4500="opacity:1"
+        ></div>
+    </section>
+    <section>
+        <div class="slide logo"
+        data-4500="transform:scale(0);"
+        data-5000="transform:scale(2); opacity:0"
+        data-5500="opacity:1"
+        >
+            <img src="img/logo02.png" alt="로고">
+        </div>
+    </section>
+    <section>
+        <div class="slide jdc"
+        data-4500="transform:scale(0)"
+        data-5000="transform:scale(1)"
+        >
+            <img src="img/air_jordan_chicago.png" alt="시카고">
+        </div>
+    </section>
+    <section>
+        <div class="slide cg"
+        data-5000="left:100%"
+        data-6000="left:0%"
+        >
+            <p>CHICAGO</p>
+        </div>
+    </section>
+ 
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="skrollr.min.js"></script>
+    <script>
+        var s = skrollr.init();
+
+        $(window).scroll(function () {
+            var wScroll = parseInt($(this).scrollTop());
+            //console.log(wScroll);
+            $('.text').text(wScroll);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+@charset "UTF-8";
+*{margin: 0;padding: 0;}
+
+body{
+    position: relative;
+}
+
+.text{
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    font-weight: bold;
+    z-index: 9999;
+}
+.jordan{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 250px;
+    padding: 100px;
+    box-sizing: border-box;
+}
+.jordan .chicago{
+    color: red;
+}
+.slide{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+.bg1{
+    background: #ccc;
+}
+.bg2{
+    background: #666;
+}
+.bg3{
+    background: #333;
+}
+.bg4{
+    background: url(img/court.jpg);
+    background-size: cover;
+}
+.ball{
+    top: 30%;
+}
+.jd{
+    width: 70%;
+    height: 70vh;
+    top: 23%;
+}
+.jd2{
+    width: 70%;
+    height: 70vh;
+    top: 21%;
+}
+.white{
+    background: #ccc;
+}
+.logo{
+    transform-origin: center;
+}
+.logo img{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.jdc{
+    transform-origin: center;
+}
+.jdc img{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.cg{
+    position: fixed;
+    text-align: center;
+    font-size: 150px;
+    font-weight: bold;
+    line-height: 20px;
+    top: 85%;
+}
